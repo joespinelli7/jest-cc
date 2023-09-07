@@ -41,3 +41,10 @@ describe("numbers", () => {
 		expect(value).toBeCloseTo(0.3);
 	})
 })
+
+describe("strings", () => {
+	it("there is no I in team", () => {
+		// checking to see if the string matches the regular expression given inside .toMatch
+		expect("team").not.toMatch(/I/);
+	})
+})
