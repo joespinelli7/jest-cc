@@ -56,3 +56,15 @@ describe("arrays", () => {
 	// check to see if array contains a certain value
 	expect(shoppingLists).toContain('kleenex');
 })
+
+function compileAndroidCode() {
+	throw new Error("you are using the wrong JDK");
+}
+
+describe("exceptions", () => {
+	it("compiling android goes as expected", () => {
+		expect(() => compileAndroidCode()).toThrow(
+			"you are using the wrong JDK"
+		);
+	})
+})
