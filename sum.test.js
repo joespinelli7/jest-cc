@@ -48,3 +48,11 @@ describe("strings", () => {
 		expect("team").not.toMatch(/I/);
 	})
 })
+
+describe("arrays", () => {
+	const shoppingLists = [
+		'diapers', 'kleenex', 'trash bags'
+	];
+	// check to see if array contains a certain value
+	expect(shoppingLists).toContain('kleenex');
+})
