@@ -14,3 +14,14 @@ describe("example tests", () => {
 		expect(obj).toEqual({});
 	})
 })
+
+describe("truthy or falsy", () => {
+	it("null should be falsy", () => {
+		const n = null;
+		expect(n).toBeFalsy();
+		// following test does same thing except showing use of .not method chained in
+		expect(n).not.toBeTruthy();
+		// expect(n).toBeNull();
+		// expect(n).not.toBeUndefined();
+	})
+})
